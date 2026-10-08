@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
+      <svg class="brand-mark" viewBox="0 0 140 64" aria-hidden="true">
+        <!-- underground roundel: white disc + red ring sit under a blue
+             bar that runs past both edges, carrying the station name -->
+        <circle cx="70" cy="32" r="29" fill="var(--paper)"/>
+        <circle cx="70" cy="32" r="29" fill="none" stroke="var(--rail-red)" stroke-width="7"/>
+        <rect x="0" y="24" width="140" height="16" fill="var(--rail-blue)"/>
+        <text x="70" y="36" text-anchor="middle" textLength="126" lengthAdjust="spacingAndGlyphs"
+              font-family="Jost, Arial, sans-serif" font-weight="700" font-size="12"
+              letter-spacing="1" fill="var(--paper)">MIND THE GAP</text>
+      </svg>
+    </a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/feed.xml' | relative_url }}">Feed</a>
+    </nav>
+  </div>
+</header>
+{% include lineband.html %}

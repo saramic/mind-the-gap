@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+A FireBeetle 2 ESP32-C6 wired to three mmWave Human Presence Sensors — watching the gap between platform and train, one radar return at a time.
